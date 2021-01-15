@@ -9,7 +9,7 @@ int main() {
     char Vowel_Letters[12] = {'A', 'E', 'I', 'O', 'U', 'Y', 'a', 'e', 'u', 'i', 'o','y'};
     char StringOut[3 * n];
 
-    ifstream StringIn("C:\\1\\StringIn.txt");
+    ifstream StringIn(R"(C:\Users\Admin\CLionProjects\untitled13\StringIn.txt)");
     if (!StringIn)
     {
         cout << "Error! The File can't be read";
@@ -50,7 +50,7 @@ int main() {
             j++;
         }
         cout << "Output String: " << StringOut << endl;
-        ofstream Out("C:\\1\\StringOut.txt");
+        ofstream Out(R"(C:\Users\Admin\CLionProjects\untitled13\StringOut.txt)");
         if (!Out)
         {
             cout << "Error! The File can't be open";
@@ -67,7 +67,7 @@ int main() {
     char StringOut_1[n];
     int i;
 
-    ifstream Out("C:\\1\\StringOut.txt");
+    ifstream Out(R"(C:\Users\Admin\CLionProjects\untitled13\StringOut.txt)");
     if (!Out)
     {
         cout << "Error! The File can't be open";
